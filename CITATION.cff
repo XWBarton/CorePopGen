@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Barton"
+    given-names: "Xavier"
+    orcid: "https://orcid.org/0000-0002-5783-4941"
+title: "CorePopGen"
+version: 1.0.0
+date-released: 2024-10-09
+url: "https://github.com/XWBarton/PhD/tree/main/CorePopGen"
