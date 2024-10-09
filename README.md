@@ -9,7 +9,7 @@
 **Standardised**: Doesn't use proprietary or overly complicated data formats for I/O.  
 
 ## Guides
-Guides for workflow can be found here: [PopGenCore Guides](https://xavierbarton.com/guides/)
+Guides for workflows can be found here: [PopGenCore Guides](https://xavierbarton.com/guides/)
 
 ## Script Index
 Work in progress...
