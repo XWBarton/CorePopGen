@@ -6,5 +6,6 @@ authors:
     orcid: "https://orcid.org/0000-0002-5783-4941"
 title: "CorePopGen"
 version: 1.0.0
+doi: 10.5281/zenodo.13927093
 date-released: 2024-10-09
 url: "https://github.com/XWBarton/CorePopGen"
