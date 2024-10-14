@@ -1,3 +1,5 @@
+__version__ = "1.0.0"
+
 import geopandas as gpd
 import pandas as pd
 import folium
@@ -59,6 +61,7 @@ def visualize_shapefile_with_landuse(shapefile_path, csv_path):
     print(f"Map has been saved to '{output_html_path}'.")
 
 # Main function to handle command-line arguments
+print(f"landuse_map.py version {__version__}")
 def main():
     parser = argparse.ArgumentParser(description='Visualize shapefile and land use data on a Leaflet map.')
     parser.add_argument('shapefile', type=str, help='Path to the shapefile (.shp)')

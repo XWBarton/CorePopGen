@@ -1,3 +1,5 @@
+__version__ = "1.0.0"
+
 import argparse
 import sys
 from pathlib import Path
@@ -59,3 +61,5 @@ if __name__ == '__main__':
 
     # Download the tiles
     download_tiles(output_folder, year, version, s3_url_prefix, tiles, overwrite, dryrun)
+    
+

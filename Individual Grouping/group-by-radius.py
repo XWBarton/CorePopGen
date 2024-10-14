@@ -1,3 +1,5 @@
+__version__ = "1.0.0"
+
 import pandas as pd
 from geopy.distance import geodesic
 import argparse
@@ -72,6 +74,7 @@ def plot_groups_on_map(data, output_html):
     print(f"Map saved to {output_html}")
 
 def main():
+    print(f"group-by-radius.py version {__version__}")
     parser = argparse.ArgumentParser(description="Group individuals by geographic proximity and plot them on a map.")
     parser.add_argument('file_path', type=str, help='Path to the CSV file containing id, lat, and lon columns.')
     parser.add_argument('radius_km', type=float, help='Radius in kilometers for grouping individuals.')

@@ -1,10 +1,12 @@
+__version__ = "1.0.0"
+
 import csv
 import sys
 import argparse
 import requests
 
 # Your What3Words API key
-API_KEY = "YOP1YSTS"
+API_KEY = "XXXXXX"
 BASE_URL = "https://api.what3words.com/v3"
 
 def get_w3w_address(lat, lon):
@@ -42,6 +44,7 @@ def process_csv(input_file, output_file, lat_col, lon_col):
                 print(f"Skipping row due to missing lat/lon columns: {row}")
 
 def main():
+    print(f"what3words.py version {__version__}")
     parser = argparse.ArgumentParser(description="Convert coordinates to what3words addresses")
     parser.add_argument("input", help="Input CSV file containing latitude and longitude")
     parser.add_argument("output", help="Output CSV file for results")

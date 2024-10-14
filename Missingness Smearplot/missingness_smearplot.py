@@ -1,3 +1,5 @@
+__version__ = "1.0.0"
+
 import pysam
 import numpy as np
 import plotly.graph_objects as go
@@ -5,6 +7,7 @@ from tqdm import tqdm
 import sys
 
 def create_missingness_heatmap(vcf_file, output_file):
+    
     # Open the VCF file
     vcf_reader = pysam.VariantFile(vcf_file)
     
@@ -69,6 +72,7 @@ def create_missingness_heatmap(vcf_file, output_file):
     print(f"Interactive heatmap saved as {output_file}")
 
 if __name__ == "__main__":
+    print(f"missingness_smearplot.py version {__version__}")
     if len(sys.argv) != 2:
         print("Usage: missingness_smearplot.py <path_to_indexed_vcf.gz_file>")
         sys.exit(1)

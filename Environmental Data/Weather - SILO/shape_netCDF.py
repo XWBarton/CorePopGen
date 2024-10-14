@@ -1,3 +1,5 @@
+__version__ = "1.0.0"
+
 import xarray as xr
 import geopandas as gpd
 import pandas as pd
@@ -119,3 +121,4 @@ df = pd.DataFrame(results)
 df.to_csv(args.output_file, index=False)
 
 print(f"Results saved to {args.output_file}")
+print(f"shape_netCDF.py version {__version__}")

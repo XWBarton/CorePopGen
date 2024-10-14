@@ -1,3 +1,5 @@
+__version__ = "1.0.0"
+
 import sys
 import pandas as pd
 import geopandas as gpd
@@ -6,6 +8,8 @@ from shapely.ops import unary_union
 import folium
 
 def main(input_csv, radius_km):
+    print(f"melt.py version {__version__}")
+    
     # Load the CSV file
     df = pd.read_csv(input_csv)
 

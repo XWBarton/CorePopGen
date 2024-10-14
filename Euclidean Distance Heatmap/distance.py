@@ -1,3 +1,5 @@
+__version__ = "1.0.0"
+
 import pysam
 import numpy as np
 from scipy.spatial.distance import pdist, squareform
@@ -53,6 +55,7 @@ def save_matrix_to_file(matrix, samples, output_file):
     np.savetxt(output_file, matrix, delimiter=',', fmt='%.6f', header=','.join(samples), comments='')
 
 def main(vcf_file, output_file):
+    print(f"distance.py version {__version__}")
     genotypes, samples = parse_vcf(vcf_file)
     distance_matrix = calculate_genetic_distance(genotypes, samples)
     
